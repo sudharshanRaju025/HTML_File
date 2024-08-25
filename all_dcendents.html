@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            direct decendent selectors
+        </title>
+        <style>
+            div > h1{
+                color: red;
+            }
+            span>h1{
+                color:blue;
+            }
+            div + h1{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>this is h1 tag</h1>
+            <h1>this is h1 tag</h1>
+            <h1>this is h1 tag</h1>
+            <span>
+                <h1>this is h1 tag</h1>
+            </span>
+            <h2>this is h2 tag</h2>
+        </div>
+        <h1>this is immediate h1 tag after div</h1>
+        <h1>this is the h1 tag</h1>
+    </body>
+</html>

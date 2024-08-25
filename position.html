@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view-port" content="width:screen-width,intial-scale=1.0">
+        <title>
+            position
+        </title>
+        <style>
+            div{
+                width: 150px;
+                height: 150px;
+                border:solid;
+            }
+            .c1{
+                background-color: blue;
+                position:fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                z-index: 3;
+                border-radius: 10px;
+            }
+            .c2{
+                background-color: aqua;
+                position: absolute;
+                left: 200px;
+                top: 100px;
+                border: solid 2px black;
+                z-index: 2;
+            }
+            .c3{
+                background-color: black;
+                position: relative;
+                top: 100px;
+                z-index: 1;
+            }
+            .c4{
+                background-color: crimson;
+                position: relative;
+                top: 120px;
+                z-index: 4;
+            }
+        </style>
+    </head>
+    <body style="height: 1000px;">
+        <div class="c1">
+            hi this is div 1
+        </div>
+        <div class="c2">
+            hi this is div 2
+        </div>
+        <div class="c3">
+            hi this is div 3
+        </div>
+        <div class="c4">
+            hi this is div 4
+        </div>
+    </body>
+</html>

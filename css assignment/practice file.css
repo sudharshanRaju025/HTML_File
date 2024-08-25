@@ -1,0 +1,28 @@
+th{
+    color: green;
+}
+td:nth-child(odd){
+    color: black;
+}
+td:nth-child(even){
+    color:red;
+}
+table{
+    border-collapse:inherit;
+}
+th{
+    text-align: left;
+}
+td{
+    text-align: center;
+}
+body{
+    background-image: url("music\ background\ image.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    width: 700 ;height: 700;
+    border-color: black;
+    border: "6";
+}

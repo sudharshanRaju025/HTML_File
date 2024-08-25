@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            assignments
+        </title>
+        <style>
+            :root
+            {
+                --primarycolor:white;
+                --secondarycolor:blue;
+                --sudha:black;
+            }
+            .container{
+                width: 700;
+                height: 700;
+                border: solid 1px var(--sudha);
+            }
+            .item{
+                width: 100px;
+                height: 100px;
+                border: solid 1px var(--sudha); 
+                background-color: var(--secondarycolor);
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+           /** 
+           grid css
+               used to display grid layout
+               each grid has strating and ending dimensions
+               *grid template rows-used to represent number of rows
+               *grid template columns -used to represent the humber of columns
+               eg:-grid-template-rows:100px 100px 100px 100px 100px 100px 
+                    grid-template-colns:100px 100px 100px 100px 100px 100px 
+           **/
+           .container{
+                        display: grid;
+                        grid-template-rows:100px 100px 100px 100px 100px 100px 100px;
+                        grid-template-columns:100px 100px 100px 100px 100px 100px 100px; 
+           }
+           .item1
+           {
+                        grid-row-start:1;
+                        grid-column-start: 1;
+
+                        grid-row-end:3;
+                        grid-column-end:4;
+           }
+           .item2
+           {
+                    grid-row-start:3;
+                    grid-column-start: 3;
+
+                    grid-row-end:5;
+                    grid-column-end:5;
+           }
+           .item3
+           {
+                    grid-row-start:-1;
+                    grid-column-start: -1;
+
+                    grid-row-end:-3;
+                    grid-column-end:-4;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item1">
+                div 1
+            </div>
+            <div class="item item2">
+                div 2
+            </div>
+            <div class="item item3">
+                div 3
+            </div>
+        </div>
+    </body>
+</html>
